@@ -1,0 +1,677 @@
+{% style %}
+  .the-review .row {
+  align-items: center;
+  }
+
+  .the-review .container {
+  padding: 0 20px;
+  }
+
+  .the-review .card {
+  text-align: center;
+  padding: 91px 50px 0;
+  width: 100%;
+  border-radius: 32px;
+  max-width: 385px;
+  height: 100%;
+  margin: auto;
+  border: 3px solid #FE0279;
+  max-height: 409px;
+  }
+
+  .the-review .card {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  }
+
+  .the-review .card p, .the-review .card h5{
+  font-size: 16px;
+  width: 100%;
+  max-width: 263px;
+  margin: 0px auto;
+  margin-top: 48px;
+  }
+
+  .the-review .heading p {
+  font-size: 16px;
+  }
+
+  .the-review  .card h5 {
+  margin-top: 56px !important;
+  }
+
+  .the-review .star a {
+  color: #FF007A;
+  text-decoration: none;
+  font-size: 30px;
+  }
+  .the-review .heading h3 {
+  font-size: 48px;
+  }
+
+  .site-btn a {
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #FEE1FF;
+  border-radius: 100px;
+  padding: 13px 90px;
+  display: inline-block;
+  color:  #853D03;
+  margin-top: 12px;
+  border: 2px solid #FF007A;
+  transition:all 0.2s linear;
+  }
+
+  .site-btn a:hover {
+  background-color: #853D03;
+  border: 2px solid  #853D03;
+  color:#fff;
+  transition:all 0.2s linear;
+  }
+  .slider-card {
+  position: relative;
+  padding-bottom: 65%;
+  transition: all 0.5s ease; /* Smooth transitions */
+  }
+
+  .the-review .card:nth-child(1) {
+  z-index: 1;
+  top: -20px;
+  left: 16px;
+  }
+  .the-review .card:nth-child(2) {
+  top: 6px;
+  z-index: 2;
+  left: 43px;
+  }
+  .the-review .card:nth-child(3) {
+  top: 35px;
+  z-index: 3;
+  left: 76px;
+  }
+
+  .the-review .card:nth-child(4) {
+  left: 108px;
+  top: 63px;
+  z-index: 4;
+  }
+  #prevBtn, #nextBtn {
+  background-color: transparent;
+  border: 2px solid #FF007A;
+  border-radius: 50%;
+  color: #FF007A;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  }
+
+  #prevBtn:hover, #nextBtn:hover {
+  background-color: #FF007A;
+  color: white;
+  }
+
+  .slider-card .card {
+  transition: top 0.5s ease, left 0.5s ease, z-index 0s ease; /* Adjust timing and easing as needed */
+  }
+
+
+  #prevBtn, #nextBtn {
+  background-color: transparent;
+  border: 2px solid #FF007A;
+  border-radius: 50%;
+  color: #FF007A;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 40%;
+  }
+
+  #nextBtn {
+  right: 159px ;
+  }
+  #prevBtn {
+  left: -67px;
+  }
+
+  button#nextBtn i,
+  button#prevBtn i  {
+  font-size: 18px;
+  }
+
+  @media(max-width:1400px) {
+  #nextBtn {
+  right: 80px ;
+  }
+  }
+
+  @media(max-width:1241px) {
+  .the-review .container {
+  }
+  #nextBtn {
+  right: 74px;
+  }
+  }
+
+  @media(max-width:1200px) {
+  .the-review .heading h3 {
+  font-size: 39px;
+  }
+
+  #prevBtn {
+  left: 262px;
+  top: 126%;
+  }
+  #nextBtn {
+  right: 168px;
+  top: 126%;
+  }
+
+  .slider-card {
+  position: relative;
+  padding-bottom: 74%;
+  transition: all 0.5s ease;
+  }
+  }
+
+  @media(max-width:992px) {
+
+  .heading {
+  margin-top: 49px;
+  }
+  #prevBtn {
+  left: 262px;
+  top: 97%;
+  }
+
+  #nextBtn {
+  right: 324px;
+  top: 97%;
+  }
+  }
+
+  @media(max-width:768px) {
+  .slider-card {
+  position: relative;
+  padding-bottom: 101%;
+  transition: all 0.5s ease;
+  }
+
+  .slider-card {
+  position: relative;
+  padding-bottom: 101%;
+  transition: all 0.5s ease;
+  }
+
+  #prevBtn {
+  left: 225px;
+  top: 97%;
+  }
+
+  #nextBtn {
+  right: 160px;
+  top: 97%;
+  }
+  }
+
+
+  @media(max-width:540px) {
+
+  .heading {
+  margin-top: 49px;
+  text-align: center;
+  }
+  .the-review .card {
+  text-align: center;
+  padding: 91px 50px 0;
+  width: 100%;
+  border-radius: 32px;
+  max-width: 338px;
+  height: 100%;
+  margin: auto;
+  border: 3px solid #FE0279;
+  max-height: 409px;
+  }
+  }
+
+
+  @media(max-width:527px) {
+  #prevBtn {
+  left: 225px;
+  top: 101%;
+  }
+
+  #nextBtn {
+  right: 160px;
+  top: 101%;
+  }
+  }
+
+
+  @media(max-width:505px) {
+  .heading {
+  margin-top: 78px;
+  text-align: center;
+  }
+
+  #prevBtn {
+  left: 225px;
+  top: 107%;
+  }
+
+
+  #nextBtn {
+  right: 142px;
+  top: 107%;
+  }
+  }
+
+
+  @media(max-width:486px) {
+ .the-review .heading {
+  margin-top: 113px;
+  text-align: center;
+  }
+
+  #prevBtn {
+  left: 225px;
+  top: 114%;
+  }
+
+  #nextBtn {
+  right: 110px;
+  top: 114%;
+  }
+  }
+
+  @media(max-width:464px) {
+  .the-review .card {
+  text-align: center;
+  padding: 91px 50px 0;
+  width: 100%;
+  border-radius: 32px;
+  max-width: 292px;
+  height: 100%;
+  margin: auto;
+  border: 3px solid #FE0279;
+  max-height: 409px;
+  }
+
+  .the-review .star a {
+  color: #FF007A;
+  text-decoration: none;
+  font-size: 20px;
+  }
+
+  .the-review .card p, .the-review .card h5 {
+  font-size: 16px;
+  width: 100%;
+  max-width: 263px;
+  margin: 0px auto;
+  margin-top: 27px;
+  }
+
+  .slider-card {
+  position: relative;
+  padding-bottom: 90%;
+  transition: all 0.5s ease;
+  }
+
+   .the-review .heading {
+  margin-top: 146px;
+  text-align: center;
+  }
+
+  #prevBtn {
+  left: 225px;
+  top: 126%;
+  }
+
+  #nextBtn {
+  right: 103px;
+  top: 126%;
+  }
+  }
+
+
+  @media(max-width:448px) {
+  #prevBtn {
+  left: 188px;
+  top: 126%;
+  }
+  }
+
+
+  @media(max-width:418px) {
+  .the-review .card {
+  text-align: center;
+  padding: 49px 50px 0;
+  width: 100%;
+  border-radius: 32px;
+  max-width: 256px;
+  height: 100%;
+  margin: auto;
+  border: 3px solid #FE0279;
+  max-height: 409px;
+  }
+
+  .the-review  .card h5 {
+  margin-top: 29px !important;
+  }
+
+  .the-review .card p, .the-review .card h5 {
+  font-size: 14px;
+  width: 100%;
+  max-width: 263px;
+  margin: 0px auto;
+  margin-top: 27px;
+  }
+
+
+  #prevBtn {
+  left: 140px;
+  top: 126%;
+  }
+
+  #nextBtn {
+  right: 28px;
+  top: 126%;
+  }
+  }
+
+  @media(max-width:380px) {
+  .the-review .card {
+  text-align: center;
+  padding: 49px 50px 0;
+  width: 100%;
+  border-radius: 32px;
+  max-width: 219px;
+  height: 100%;
+  margin: auto;
+  border: 3px solid #FE0279;
+  max-height: 409px;
+  }
+
+  .the-review .star a {
+  color: #FF007A;
+  text-decoration: none;
+  font-size: 13px;
+  }
+
+  .the-review .card p, .the-review .card h5 {
+  font-size: 12px;
+  width: 100%;
+  max-width: 263px;
+  margin: 0px auto;
+  margin-top: 16px;
+  }
+
+  .the-review .heading h3 {
+  font-size: 33px;
+  }
+  }
+
+
+  @media(max-width:345px) {
+  .the-review .card {
+  text-align: center;
+  padding: 49px 16px 0;
+  width: 100%;
+  border-radius: 32px;
+  max-width: 186px;
+  height: 100%;
+  margin: auto;
+  border: 3px solid #FE0279;
+  max-height: 409px;
+  }
+
+  .the-review .heading h3 {
+  font-size: 26px;
+  }
+
+  .the-review .heading p {
+  font-size: 14px;
+  width: 100%;
+  max-width: 255px;
+  margin: 15px auto;
+  }
+
+  #prevBtn {
+  left: 140px;
+  top: 133%;
+  }
+
+  #nextBtn {
+  right: 28px;
+  top: 134%;
+  }
+  }
+{% endstyle %}
+
+<div
+  class="the-review"
+  style="padding-top:{{ section.settings.padding_top }}px; padding-bottom:{{ section.settings.padding_bottom }}px;"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="slider-card">
+          {% assign slider-card = section.blocks | where: 'type', 'images' %}
+          {% for card in slider-card %}
+            <div class="card" style="background-color:{{ card.settings.card_background_color }};">
+              {% if card.settings.add_image %}
+                <img src="{{ card.settings.add_image | img_url: "200x" }}" alt="">
+              {% endif %}
+              <div class="star">
+                <a href="#"> <i class="fa-solid fa-star"></i> </a>
+                <a href="#"> <i class="fa-solid fa-star"></i> </a>
+                <a href="#"> <i class="fa-solid fa-star"></i> </a>
+                <a href="#"> <i class="fa-solid fa-star"></i> </a>
+                <a href="#"> <i class="fa-solid fa-star"></i> </a>
+              </div>
+              <div class="text">
+                <p style="color:{{ card.settings.text_color }};">{{ card.settings.add_card_text }}</p>
+              </div>
+              <div class="sub-text">
+                <h5 style="color:{{ card.settings.text_color }};">{{ card.settings.add_card_sub_text }}</h5>
+              </div>
+            </div>
+          {% endfor %}
+          <button id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        {% assign heading-text = section.blocks | where: 'type', 'text' %}
+        {% for text in heading-text %}
+          <div class="heading">
+            <h3 style="color:{{ text.settings.heading_color }};">{{ text.settings.add_heading }}</h3>
+            <p style="color:{{ text.settings.sub_heading_color }};}">{{ text.settings.sub_heading_text }}</p>
+            <div class="site-btn">
+              <a href="{{ text.settings.button_url }}">
+                {{- text.settings.btn_text -}}
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "testimonals card",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "padding top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1,
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "padding bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1,
+    },
+  ],
+  "blocks": [
+    {
+      "type": "images",
+      "name": "image slider",
+      "settings": [
+              {
+          "type": "color",
+          "id": "card_background_color",
+          "label": "Card Backgrund Color"
+           },
+           {
+             "type": "image_picker",
+             "id": "add_image",
+             "label": "Add Image"
+           },
+             {
+             "type": "text",
+             "id": "add_card_text",
+             "label": "Add Text"
+           },
+             {
+             "type": "text",
+             "id": "add_card_sub_text",
+             "label": "Add Sub Text"
+           },
+           {
+             "type": "color",
+             "id": "text_color",
+             "label": "Text Color"
+           }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "add text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "add_heading",
+          "label": "Add Heading"
+        },
+         {
+          "type": "color",
+          "id": "heading_color",
+          "label": "heading Color"
+        },
+        {
+          "type": "text",
+          "id": "sub_heading_text",
+          "label": "heading text"
+        },
+         {
+          "type": "color",
+          "id": "sub_heading_color",
+          "label": "Sub heading Color"
+        },
+         {
+          "type": "text",
+          "id": "btn_text",
+          "label": "button text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "button url"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "testimonals card"
+    }
+  ]
+}
+{% endschema %}
+
+
+
+<script>
+
+
+
+    $(document).ready(function() {
+    let currentIndex = 0;
+    const cards = $('.slider-card .card');
+    const totalCards = cards.length;
+    let autoplayInterval;
+
+    function updateSlider() {
+        cards.each(function(index) {
+            const positionIndex = (index - currentIndex + totalCards) % totalCards;
+            // Apply the correct top, left, and z-index based on the card's position relative to the current index
+            if (positionIndex === 0) {
+                $(this).css({ 'top': '-20px', 'left': '16px', 'z-index': 1 });
+            } else if (positionIndex === 1) {
+                $(this).css({ 'top': '6px', 'left': '43px', 'z-index': 2 });
+            } else if (positionIndex === 2) {
+                $(this).css({ 'top': '35px', 'left': '76px', 'z-index': 3 });
+            } else if (positionIndex === 3) {
+                $(this).css({ 'top': '63px', 'left': '108px', 'z-index': 4 });
+            } else {
+                $(this).css({ 'top': '', 'left': '', 'z-index': 0 }); // Reset for cards out of view
+            }
+        });
+    }
+
+    // Initialize the slider
+    updateSlider();
+
+    // Add functionality to cycle through the cards
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalCards;
+        updateSlider();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+        updateSlider();
+    }
+
+    // Automatic slide change every 3 seconds
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 3000);
+    }
+
+    // Start autoplay initially
+    startAutoplay();
+
+    // Stop autoplay when user clicks next or prev buttons
+    function stopAutoplay() {
+        clearInterval(autoplayInterval);
+    }
+
+    // Manual control with buttons
+    $('#nextBtn').click(function() {  
+        stopAutoplay();
+        nextSlide();
+    });
+
+    $('#prevBtn').click(function() {
+        stopAutoplay();
+        prevSlide();
+    });
+});
+</script>
+
